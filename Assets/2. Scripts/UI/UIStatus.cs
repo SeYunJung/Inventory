@@ -28,13 +28,10 @@ public class UIStatus : MonoBehaviour
 
     public void OnBackBtnClicked()
     {
-        Debug.Log("뒤로가기 버튼");
         // 스탯 창 끄기
         gameObject.SetActive(false);
 
         // 메인 UI 키기
         UIManager.Instance.SetActive("Main");
-
-        Debug.Log("뒤로가기 버튼 클릭");
     }
 }

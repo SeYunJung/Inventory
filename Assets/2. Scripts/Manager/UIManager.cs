@@ -39,7 +39,8 @@ public class UIManager : SingletonMono<UIManager>
         switch (name)
         {
             case "Main":
-                _uiMainMenu.gameObject.SetActive(true);
+                _statusBtn.gameObject.SetActive(true);
+                _inventoryBtn.gameObject.SetActive(true);
                 break;
         }
     }
@@ -50,6 +51,9 @@ public class UIManager : SingletonMono<UIManager>
         {
             case "Status":
                 _uiStatus.gameObject.SetActive(true);
+                break;
+            case "Inventory":
+                _uiInventory.gameObject.SetActive(true);
                 break;
         }
     }

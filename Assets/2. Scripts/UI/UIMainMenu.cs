@@ -43,6 +43,10 @@ public class UIMainMenu : MonoBehaviour
 
     private void OnInventoryBtnClicked()
     {
-        //UIManager.Instance.SetActive("Inventory", true);
+        // 상태버튼, 인벤토리 버튼 비활성화 
+        UIManager.Instance.SetInActive("Inventory");
+
+        // 인벤토리 UI 활성화
+        UIManager.Instance.SetActiveUI("Inventory");
     }
 }
