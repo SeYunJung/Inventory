@@ -52,8 +52,10 @@ public class UIInventory : MonoBehaviour
         foreach(ItemData item in _itemDictionary.Keys)
         {
             GameObject go = Instantiate(slotPrefab, contentTransform);
+            go.GetComponent<ItemSlot>().SetItemData(item);
 
             GameObject go2 = Instantiate(item.itemPrefab, go.transform);
+            go.GetComponent<ItemSlot>().GetEuqipImage(go2.transform.GetChild(1).gameObject);
             if (!_itemDictionary[item]) // ÀåÂøÅÛÀÌ ¾Æ´Ï¸é 
             {
                 // ÀåÂø Ç¥½Ã
