@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df47ebd55e597da41908a587e9e9ba75, type: 3}
   m_Name: Bow
   m_EditorClassIdentifier: 
-  itemName: Bow
-  itemPrefab: {fileID: 0}
+  itemPrefab: {fileID: 1059367828337797305, guid: 982dc414c2cc7f64c9b9bc4c252a4783, type: 3}
+  isEquip: 0

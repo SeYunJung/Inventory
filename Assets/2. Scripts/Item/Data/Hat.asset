@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df47ebd55e597da41908a587e9e9ba75, type: 3}
   m_Name: Hat
   m_EditorClassIdentifier: 
+  itemPrefab: {fileID: 2864959476270693192, guid: a45c2e2387970ca44ad0bf70fcf0f358, type: 3}
+  isEquip: 0

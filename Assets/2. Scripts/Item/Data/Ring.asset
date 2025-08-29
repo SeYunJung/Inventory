@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df47ebd55e597da41908a587e9e9ba75, type: 3}
   m_Name: Ring
   m_EditorClassIdentifier: 
+  itemPrefab: {fileID: 957683637723245757, guid: 09226590685f8864ab2fc2121cc023de, type: 3}
+  isEquip: 0
