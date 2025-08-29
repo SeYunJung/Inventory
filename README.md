@@ -16,7 +16,7 @@ Unity 엔진 기반으로 개발되었으며, ScriptableObject, Singleton을 활
 
 ## 🖼️ 게임 화면
 <p>게임 플레이 화면입니다.</p>
-<img src="https://github.com/user-attachments/assets/bec74a7a-c007-4626-8802-ff9565a9dacb" width="600"/>
+<img src="https://github.com/user-attachments/assets/1c39a72f-0465-4ef5-829e-8331fcef8480" width="600"/>
 <img src="https://github.com/user-attachments/assets/6159cd69-5926-4441-bd26-e6ef581f6a33" width="600"/>
 
 
