@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIInventory : MonoBehaviour
 {
     [SerializeField] private Button _backBtn;
+    [SerializeField] private TMP_Text _capacityText;
 
     private Player _player;
     private Dictionary<ItemData, bool> _itemDictionary;
@@ -18,6 +20,8 @@ public class UIInventory : MonoBehaviour
         _backBtn.onClick.AddListener(OnBackBtnClicked);
 
         Init();
+
+        SetCapacity();
 
         SetSlot();
     }
@@ -37,18 +41,13 @@ public class UIInventory : MonoBehaviour
         _itemDictionary = _player.ItemDictionary;
     }
 
+    private void SetCapacity()
+    {
+        _capacityText.text = $"{_itemDictionary.Keys.Count} / 120";
+    }
+
     private void SetSlot()
     {
-        //for(int i = 0; i < _itemDictionary.Count; i++)
-        //{
-        //    GameObject go = Instantiate(slotPrefab, contentTransform);
-
-        //    // 아이템 슬롯에 아이템 세팅 
-        //    // 뭘 기준으로 세팅? 딕셔너리로 
-        //    // 만들어진 오브젝트의 하위로 넣기 
-
-        //}
-        
         // 아이템 슬롯 생성, 슬롯에 아이템 세팅 
         foreach(ItemData item in _itemDictionary.Keys)
         {
