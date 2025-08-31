@@ -25,8 +25,8 @@ public class UIManager : SingletonMono<UIManager>
         switch (btnName)
         {
             // 상태 버튼 누른 경우 
-            case "Status":
-            case "Inventory":
+            case Constants.SceneName.Status:
+            case Constants.SceneName.Inventory:
                 // 상태버튼, 인벤토리 버튼 비활성화 
                 _statusBtn.gameObject.SetActive(false);
                 _inventoryBtn.gameObject.SetActive(false);
@@ -38,7 +38,7 @@ public class UIManager : SingletonMono<UIManager>
     {
         switch (name)
         {
-            case "Main":
+            case Constants.SceneName.Main:
                 _statusBtn.gameObject.SetActive(true);
                 _inventoryBtn.gameObject.SetActive(true);
                 break;
@@ -49,10 +49,10 @@ public class UIManager : SingletonMono<UIManager>
     {
         switch (uiName)
         {
-            case "Status":
+            case Constants.SceneName.Status:
                 _uiStatus.gameObject.SetActive(true);
                 break;
-            case "Inventory":
+            case Constants.SceneName.Inventory:
                 _uiInventory.gameObject.SetActive(true);
                 break;
         }

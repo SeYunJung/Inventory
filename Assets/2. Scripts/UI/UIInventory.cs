@@ -32,7 +32,7 @@ public class UIInventory : MonoBehaviour
         gameObject.SetActive(false);
 
         // 메인 UI 키기
-        UIManager.Instance.SetActive("Main");
+        UIManager.Instance.SetActive(Constants.SceneName.Main);
     }
 
     private void Init()
